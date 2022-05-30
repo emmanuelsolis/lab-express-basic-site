@@ -1,6 +1,29 @@
+* {
+ padding: 0;
+  margin: 0;
+}
 body{
-    color:bisque;
-    background-color: green;
+  background-color: rgb(30, 28, 28);
+  color: beige;
+  /* display: flex; */
+	/* flex-direction: column; */
+	/* flex-wrap: nowrap; */
+	justify-content: center;
+	align-items: center;
+	/* align-content: stretch; */
+}
+body h1{
+  font-size: 3em;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  padding: auto;
+  margin: auto;
+
+}
+/* Navbar */
+nav{
+  display: flex;
+  justify-content: center;
 }
 ul {
     list-style-type: none;
@@ -26,13 +49,68 @@ li a {
 li a:hover {
     background-color: #111;
   }
+  /* cover banner */
+  div.banner img{
+    display: flex;
+    float: left;
+    
 
-body image{
-    width:100vh;
-
-    height:100vh;
-}
+  }
+  /* //images  about*/
 .responsive {
     width: 100%;
     height: auto;
   }
+.abtimg{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+.aside{
+  display: flexbox;
+  float: right;
+  color: aliceblue;
+}
+section {
+  display: flexbox;
+  float: left;
+}
+section p {
+  color: black;
+}
+/* Gallery */
+#subtitle {
+  margin: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+}
+.gallery {
+  display: flexbox;
+  box-sizing: border-box;
+
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 175px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}

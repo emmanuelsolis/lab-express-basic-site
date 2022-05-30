@@ -7,11 +7,19 @@ const app = express();
 //configuramos archivos estaticos
 app.use(express.static('public'));
 
-// solicitamos
+// solicitamos rutas
 
-app.get("/home", (req, res, next)=>{
-    
-    res.sendFile(__dirname + "/views/home.html");
+app.get("/", (req, res)=>{
+    res.sendFile(__dirname + '/views/home.html')
+});
+app.get("/about", (req, res)=>{
+    res.sendFile(__dirname + '/views/about.html')
+});
+app.get("/photogallery", (req, res)=>{
+    res.sendFile(__dirname + '/views/photogallery.html')
+});
+app.get("/works", (req, res)=>{
+    res.sendFile(__dirname + '/views/works.html')
 });
 
 
